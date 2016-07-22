@@ -12,17 +12,8 @@ enum JDNavigationItemType {
     case  left
     case  right
 }
-class BaseViewController: UIViewController {
-    private var _clickedBackButton:Bool?
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    override func viewDidLoad(){
-        super.viewDidLoad()
-    }
+extension UIViewController
+{
     func setNavigationBarHidden(hidden:Bool){
         self.navigationController?.navigationBar.hidden = hidden
     }
@@ -85,4 +76,5 @@ class BaseViewController: UIViewController {
         return nil
     }
     
+
 }
