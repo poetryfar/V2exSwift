@@ -1,0 +1,9 @@
+*xcshareddata
+*xcuserdata
+*.xcuserdatad
+*.xcuserstate
+*.xcscheme
+*.xcworkspacedata
+*.xcuserdatad
+*.DS_Store
+*xcschemes

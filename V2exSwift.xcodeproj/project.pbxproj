@@ -17,6 +17,7 @@
 		B8607A821D23DA4A00E2625F /* UIButton+IncreaseHitArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8607A7F1D23DA4A00E2625F /* UIButton+IncreaseHitArea.swift */; };
 		B8607A831D23DA4A00E2625F /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8607A801D23DA4A00E2625F /* UIColor+Hex.swift */; };
 		B8607A841D23DA4A00E2625F /* UILabel+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8607A811D23DA4A00E2625F /* UILabel+Additions.swift */; };
+		B8607A8B1D23F5E900E2625F /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8607A8A1D23F5E900E2625F /* UIView+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B8607A7F1D23DA4A00E2625F /* UIButton+IncreaseHitArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+IncreaseHitArea.swift"; sourceTree = "<group>"; };
 		B8607A801D23DA4A00E2625F /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		B8607A811D23DA4A00E2625F /* UILabel+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Additions.swift"; sourceTree = "<group>"; };
+		B8607A8A1D23F5E900E2625F /* UIView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				B8607A7F1D23DA4A00E2625F /* UIButton+IncreaseHitArea.swift */,
 				B8607A801D23DA4A00E2625F /* UIColor+Hex.swift */,
 				B8607A811D23DA4A00E2625F /* UILabel+Additions.swift */,
+				B8607A8A1D23F5E900E2625F /* UIView+Additions.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8607A8B1D23F5E900E2625F /* UIView+Additions.swift in Sources */,
 				B8607A7E1D23DA4200E2625F /* Global.swift in Sources */,
 				B8607A751D23CD8B00E2625F /* RootViewController.swift in Sources */,
 				B8607A841D23DA4A00E2625F /* UILabel+Additions.swift in Sources */,
