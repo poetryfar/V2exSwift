@@ -7,3 +7,6 @@
 *.xcuserdatad
 *.DS_Store
 *xcschemes
+*.xcscheme
+*/xcuserdata/*
+V2exSwift.xcodeproj/xcuserdata/pengbi.xcuserdatad/xcschemes/V2exSwift.xcscheme
