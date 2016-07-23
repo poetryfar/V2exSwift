@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-V2exSwift/HMSegmentedControl.framework"
+  install_framework "Pods-V2exSwift/SwiftyJSON.framework"
   install_framework "Pods-V2exSwift/Alamofire.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-V2exSwift/HMSegmentedControl.framework"
+  install_framework "Pods-V2exSwift/SwiftyJSON.framework"
   install_framework "Pods-V2exSwift/Alamofire.framework"
 fi
