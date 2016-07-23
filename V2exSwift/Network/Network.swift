@@ -7,3 +7,12 @@
 //
 
 import Foundation
+import Alamofire
+class Network {
+    func request() -> Void {
+        Alamofire.request(.GET, "http://baidu.com")
+        .responseJSON { Response in
+            Response.data
+        }
+    }
+}

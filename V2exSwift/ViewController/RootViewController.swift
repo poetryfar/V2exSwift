@@ -9,24 +9,17 @@
 import Foundation
 import UIKit
 class  RootViewController: UIViewController{
-    let segmentControl:HMSegmentedControl = HMSegmentedControl.init(sectionTitles: ["1","2","3","4","5"])
+    
     override func viewDidLoad() {
         self.edgesForExtendedLayout = UIRectEdge.None
         self.view.backgroundColor = UIColor.whiteColor()
         setCenterTitle("V2ex")
         
-        self.view.addSubview(segmentControl)
-        segmentControl.backgroundColor = UIColor.grayColor()
-        segmentControl.frame = CGRectMake(0, 0, self.view.width, 40)
-        segmentControl.indexChangeBlock = {(selectedIndex :Int) ->Void in
-            if 0 == selectedIndex {
-                
-            }
-            else if 1 == selectedIndex
-            {
-                
-            }
-        }
+        let segment:UISegmentedControl = UISegmentedControl.init(items: ["1","2","3","4"])
+        segment.frame = CGRectMake(0, 0, self.view.width, 40)
+        self.view.addSubview(segment)
+        segment.addTarget(self, action: #selector(self.clickButton), forControlEvents: UIControlEvents.ValueChanged)
+        
     }
     
     func clickButton() -> Void {

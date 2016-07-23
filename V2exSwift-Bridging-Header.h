@@ -10,7 +10,6 @@
 #define V2exSwift_Bridging_Header_h
 
 
-
 #import <HMSegmentedControl/HMSegmentedControl.h>
 
 #endif /* V2exSwift_Bridging_Header_h */

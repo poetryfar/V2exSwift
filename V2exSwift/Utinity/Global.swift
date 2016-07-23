@@ -10,19 +10,12 @@ import Foundation
 import UIKit
 class JDGlobal {
     class func isIos7Plus()->Bool{
-        if #available(iOS 8.0, *) {
             let processInfo:NSProcessInfo = NSProcessInfo.processInfo()
             var version:NSOperatingSystemVersion = NSOperatingSystemVersion()
             version.majorVersion = 7
             version.minorVersion = 0
             version.patchVersion  = 0
             return processInfo.isOperatingSystemAtLeastVersion(version)
-        }
-        else
-        {
-            let version:String = self.systemVersion
-            return Float(version) > 7
-        }
     }
     class var screenHeight:CGFloat{
         return UIScreen.mainScreen().bounds.size.height
