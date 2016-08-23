@@ -87,9 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-V2exSwift/HMSegmentedControl.framework"
   install_framework "Pods-V2exSwift/SwiftyJSON.framework"
   install_framework "Pods-V2exSwift/Alamofire.framework"
+  install_framework "Pods-V2exSwift/AlamofireObjectMapper.framework"
+  install_framework "Pods-V2exSwift/ObjectMapper.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-V2exSwift/HMSegmentedControl.framework"
   install_framework "Pods-V2exSwift/SwiftyJSON.framework"
   install_framework "Pods-V2exSwift/Alamofire.framework"
+  install_framework "Pods-V2exSwift/AlamofireObjectMapper.framework"
+  install_framework "Pods-V2exSwift/ObjectMapper.framework"
 fi

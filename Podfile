@@ -4,5 +4,7 @@ use_frameworks!
 
 target 'V2exSwift' do
     pod 'Alamofire', '~> 3.4'
+    pod 'ObjectMapper', '~> 1.1.1'
+    pod 'AlamofireObjectMapper', '~> 2.1.0'
 end
 pod 'SwiftyJSON', '~> 2.3.2'
