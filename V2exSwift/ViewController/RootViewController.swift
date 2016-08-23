@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 class  RootViewController: UIViewController{
     
+    lazy var request:AllPointAPIManager = {
+        let manager = AllPointAPIManager()
+        return manager
+    }()
     override func viewDidLoad() {
         self.edgesForExtendedLayout = UIRectEdge.None
         self.view.backgroundColor = UIColor.whiteColor()
@@ -18,11 +22,11 @@ class  RootViewController: UIViewController{
         let segment:UISegmentedControl = UISegmentedControl.init(items: ["1","2","3","4"])
         segment.frame = CGRectMake(0, 0, self.view.width, 40)
         self.view.addSubview(segment)
-        segment.addTarget(self, action: #selector(self.clickButton), forControlEvents: UIControlEvents.ValueChanged)
+        segment.addTarget(self, action: #selector(clickButton), forControlEvents: UIControlEvents.ValueChanged)
         
     }
     
     func clickButton() -> Void {
-        
+        self.request.startRequest()
     }
 }
