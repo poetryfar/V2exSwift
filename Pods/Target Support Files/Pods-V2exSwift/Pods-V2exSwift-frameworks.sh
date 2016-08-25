@@ -85,6 +85,8 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-V2exSwift/HMSegmentedControl.framework"
+  install_framework "Pods-V2exSwift/Kingfisher.framework"
+  install_framework "Pods-V2exSwift/SnapKit.framework"
   install_framework "Pods-V2exSwift/SwiftyJSON.framework"
   install_framework "Pods-V2exSwift/Alamofire.framework"
   install_framework "Pods-V2exSwift/AlamofireObjectMapper.framework"
@@ -92,6 +94,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-V2exSwift/HMSegmentedControl.framework"
+  install_framework "Pods-V2exSwift/Kingfisher.framework"
+  install_framework "Pods-V2exSwift/SnapKit.framework"
   install_framework "Pods-V2exSwift/SwiftyJSON.framework"
   install_framework "Pods-V2exSwift/Alamofire.framework"
   install_framework "Pods-V2exSwift/AlamofireObjectMapper.framework"

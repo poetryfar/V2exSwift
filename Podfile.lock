@@ -4,21 +4,27 @@ PODS:
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
   - HMSegmentedControl (1.5.2)
+  - Kingfisher (2.4.3)
   - ObjectMapper (1.1.5)
+  - SnapKit (0.15.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.4)
   - AlamofireObjectMapper (~> 2.1.0)
   - HMSegmentedControl
+  - Kingfisher (~> 2.4)
   - ObjectMapper (~> 1.1.1)
+  - SnapKit (~> 0.15.0)
   - SwiftyJSON (~> 2.3.2)
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   AlamofireObjectMapper: 82391c31f23e37bdb2660da174bcf81b202da39d
   HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  Kingfisher: 322a9c1c5b03212c1e741d6bece72d387b01a77a
   ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0
