@@ -17,6 +17,7 @@ class AllPointAPIManager: BaseAPIManager,APIManagerProtocol{
     
     func apiGetResponse(data: AnyObject?, type: APIDataType) {
         if let letDelgate = delegate as? AllPointAPIManagerDelegate {
+            letDelgate.getAllPointSuccess(data!, dataType:type)
         }
     }
     

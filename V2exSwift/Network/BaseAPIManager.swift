@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import AlamofireObjectMapper
 enum APIMethod:String {
     case GET,POST
 }
@@ -68,13 +69,15 @@ class BaseAPIManager{
             }
             Alamofire.request(apiMethod, chirld.apiPath(), parameters:chirld.apiParameter(), encoding: .URL, headers: chirld.apiHeader()).responseJSON(completionHandler: { [weak self] (response) in
                 if let strongSelf = self{
-                    if let aData = response.data{
-                        let json = JSON.init(data: aData)
-                        strongSelf.success(json)
-                        strongSelf.chirld?.apiGetResponse(json.rawValue, type: json.type.convertToAPIDataTyepe())
-                        return;
+                    guard  response.result.error != nil else{
+                        if let aData = response.data{
+                            let json = JSON.init(data: aData)
+                            strongSelf.success(json)
+                            strongSelf.chirld?.apiGetResponse(json.rawValue, type: json.type.convertToAPIDataTyepe())
+                        }
+                        return
                     }
-                    strongSelf.chirld?.apiGetResponse(nil, type: APIDataType.Null)
+                    strongSelf.chirld?.apiGetResponse(response.result.error, type: .Null)
                 }
                 
             })
